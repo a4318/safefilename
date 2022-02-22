@@ -9,4 +9,4 @@ import unittest
 
 import safefilename
 test "can replace":
-  check safefilenames("b?a/10") == "b？a／10"
+  check safefilenames("b?a/10\n") == "b？a／10"
